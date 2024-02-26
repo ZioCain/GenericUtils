@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonInput, IonicModule } from '@ionic/angular';
 import { PagePage } from 'src/app/page/page.page';
-// import { IonCol, IonGrid, IonInput, IonRow } from '@ionic/angular/standalone';
+import { IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonCol, IonGrid, IonInput as IonInputStandalone, IonRow } from '@ionic/angular/standalone';
 
 @Component({
 	selector: 'app-proportions',
@@ -11,7 +11,8 @@ import { PagePage } from 'src/app/page/page.page';
 	styleUrls: ['./proportions.page.scss'],
 	standalone: true,
 	imports: [IonicModule, CommonModule, FormsModule, PagePage,
-		// IonInput, IonGrid, IonRow, IonCol,
+		IonInputStandalone, IonGrid, IonRow, IonCol,
+		IonCard, IonCardContent, IonCardHeader, IonCardTitle,
 	]
 })
 export class ProportionsPage implements OnInit {

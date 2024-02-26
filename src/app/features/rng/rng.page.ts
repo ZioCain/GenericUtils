@@ -3,13 +3,17 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 import { PagePage } from 'src/app/page/page.page';
+import { IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonCol, IonGrid, IonRow, IonInput } from '@ionic/angular/standalone';
 
 @Component({
 	selector: 'app-rng',
 	templateUrl: './rng.page.html',
 	styleUrls: ['./rng.page.scss'],
 	standalone: true,
-	imports: [IonicModule, CommonModule, FormsModule, PagePage]
+	imports: [IonicModule, CommonModule, FormsModule, PagePage,
+		IonInput, IonGrid, IonRow, IonCol,
+		IonCard, IonCardContent, IonCardHeader, IonCardTitle,
+	]
 })
 export class RngPage implements OnInit {
 
