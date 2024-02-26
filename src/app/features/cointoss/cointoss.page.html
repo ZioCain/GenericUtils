@@ -1,0 +1,19 @@
+<app-page title="Coin toss">
+	<ion-card>
+		<ion-card-header>
+			<ion-card-title>Toss a coin to make your decison</ion-card-title>
+		</ion-card-header>
+		<ion-card-content>
+			<ion-button expand="block" (click)="TossCoin()">Toss the coin</ion-button>
+		</ion-card-content>
+	</ion-card>
+
+	<ion-card>
+		<ion-card-header>
+			<ion-card-title>Result</ion-card-title>
+		</ion-card-header>
+		<ion-card-content class="ion-text-center">
+			<ion-label>{{ result }}</ion-label>
+		</ion-card-content>
+	</ion-card>
+</app-page>

@@ -1,0 +1,34 @@
+<app-page title="Proportions">
+	<ion-card>
+		<ion-card-header>
+			<ion-card-title>Calculate the result of a proportion.</ion-card-title>
+		</ion-card-header>
+		<ion-card-content>
+			<ion-grid>
+				<ion-row>
+					<ion-col>
+						<ion-input #x1 type="number" placeholder="x1" (input)="Calculate(x2, +x1.value, +y2.value, +y1.value)"></ion-input>
+					</ion-col>
+					<ion-col></ion-col>
+					<ion-col>
+						<ion-input #x2 type="number" placeholder="x2" (input)="Calculate(x1, +y1.value, +x2.value, +y2.value)"></ion-input>
+					</ion-col>
+				</ion-row>
+				<ion-row>
+					<ion-col><hr></ion-col>
+					<ion-col class="ion-text-center">=</ion-col>
+					<ion-col><hr></ion-col>
+				</ion-row>
+				<ion-row>
+					<ion-col>
+						<ion-input #y1 type="number" placeholder="y1" (input)="Calculate(y2, +y1.value, +x2.value, +x1.value)"></ion-input>
+					</ion-col>
+					<ion-col></ion-col>
+					<ion-col>
+						<ion-input #y2 type="number" placeholder="y2" (input)="Calculate(y1, +x1.value, +y2.value, +x2.value)"></ion-input>
+					</ion-col>
+				</ion-row>
+			</ion-grid>
+		</ion-card-content>
+	</ion-card>
+</app-page>

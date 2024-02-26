@@ -8,13 +8,13 @@ import { AppComponent } from './app/app.component';
 import { environment } from './environments/environment';
 
 if (environment.production) {
-  enableProdMode();
+	enableProdMode();
 }
 
 bootstrapApplication(AppComponent, {
-  providers: [
-    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
-    provideIonicAngular(),
-    provideRouter(routes),
-  ],
+	providers: [
+		{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
+		provideIonicAngular(),
+		provideRouter(routes),
+	],
 });

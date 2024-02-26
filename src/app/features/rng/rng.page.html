@@ -1,0 +1,21 @@
+<app-page title="Random Number Generator">
+	<ion-card>
+		<ion-card-header>
+			<ion-card-title>Generate a random number</ion-card-title>
+		</ion-card-header>
+		<ion-card-content>
+			<ion-input [(ngModel)]="min" placeholder="Minimum value"></ion-input>
+			<ion-input [(ngModel)]="max" placeholder="Maximum value"></ion-input>
+			<ion-button (click)="Generate()" expand="block">Generate number</ion-button>
+		</ion-card-content>
+	</ion-card>
+
+	<ion-card>
+		<ion-card-header>
+			<ion-card-title>Result</ion-card-title>
+		</ion-card-header>
+		<ion-card-content class="ion-text-center">
+			<ion-label>{{ output }}</ion-label>
+		</ion-card-content>
+	</ion-card>
+</app-page>
